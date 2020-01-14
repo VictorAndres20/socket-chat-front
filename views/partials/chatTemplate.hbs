@@ -1,0 +1,45 @@
+<div id="chat" class="container-fluid" style="display: none; margin-top: 20px;">
+    <div class="row">
+        <div class="col-sm-3 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <a href="/" class="btn btn-danger"><i class="fas fa-power-off"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="usersConnected" class="container" style="height: 450px; overflow-y: auto;">
+                
+            </div>
+        </div>
+        <div class="col-sm-6 text-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 text-center p-3" style="background-color: #3498DB;">
+                        <h5 style="color: #fff;"><strong id="chatUser"> Pick an online user to chat</strong></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="chatScreen" class="col-sm-12 p-3" style="height: 450px; overflow-y: auto;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="chatSendMessage" class="col-sm-12" style="display: none;">
+                        <div class="text-center p-1">
+                            <div class="form-row mb-4">
+                                <div class="col-sm-9">
+                                    <textarea type="text" id="message" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-sm-3">
+                                    <button onclick="sendMessage()" type="button" class="btn btn-primary"><i class="fab fa-telegram-plane"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="alertsSection" class="col-sm-3 text-center" style="height: 450px; overflow-y: auto;">
+        </div>
+    </div>
+</div>
